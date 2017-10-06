@@ -1,17 +1,36 @@
-lista = []
-contador = -1
-entrada = int(input("Digite um número para adicionar a lista e '0' para imprimir: "))
+text = "abc"
 
-while entrada != 0:
-    lista.append(entrada)
-    entrada = int(input("Digite um número inteiro: "))
+def reverse(text):
+  lista_letras = []
+  lista_letras_inversa = []
+  x = -1
+  for letra in text:
+    lista_letras.append(letra)
+    # Validar input de letras
+    print (letra)
 
-#print("A quantidade de intens na lista é de: " + str(len(lista)))
-#print("A lista contém: " + str(lista))
 
-quantidade = len(lista)
+  quantidade = len(lista_letras)
+  
+  # Validar quantidade de letras e lista em si 
+  print("Lista: " + str(lista_letras))
+  print("Quantidade : " + str(quantidade))
+  
+  contador = -1
+  
+  while contador < quantidade:
+    lista_letras_inversa.append(lista_letras[-1])
+    lista_letras = lista_letras[0,len(lista_letras) - 1]
+  
+  quantidade2 = len(lista_letras_inversa)
+    
+  # Validar quantidade de letras e lista em si 
+  print("Lista: " + str(lista_letras_inversa))
+  print("Quantidade : " + str(quantidade2))
+  
 
-while quantidade > 0:
-    print(lista[contador])
-    quantidade = quantidade - 1
-    contador = contador - 1
+reverse(text)
+
+  # Transformar a string em uma lista
+  # Fazer for item a item negativo
+  # Inserir os dados da lista em ordem reversa em nova lista
